@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <video id="video-background" preload muted autoplay loop>
+        <source src="~/Content/MP4/LatteArt.mp4" type="video/mp4" />
+        <source src="~/Content/MP4/LatteArt.mp4" type="video/ogg" />
+    </video>
+    
+</div>
+<div class="container body-content">
+    <div class="row header-center">
+        <div class="col-sm-12 col-md-12">
+            <h1>Barista Training</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4 col-md-4 thumb">
+            <div class="thumb">
+                <img src="~/Content/Images/Latte.png" alt="No Image Found" />
+            </div>
+            <div class="thumb">
+                @Html.ActionLink("Latte", "LatteTraining", "Home", new { @class = "btn btn-outline-dark" })
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-4 thumb">
+            <div class="thumb"><img src="~/Content/Images/CaramelMacchiato.png" alt="No Image Found" /></div>
+            <div class="thumb">@Html.ActionLink("Caramel Macchiato", "CaramelMacchiatoTraining", "Home", new { @class = "btn btn-outline-dark" })</div>
+            
+            
+        </div>
+        <div class="col-sm-4 col-md-4 thumb">
+            <div class="thumb"><img src="~/Content/Images/Mocha.png" alt="No Image Found" /></div>
+            <div class="thumb">@Html.ActionLink("Mocha", "MochaTraining", "Home", new { @class = "btn btn-outline-dark" })</div>
+            
+            
+        </div>
+    </div>
+</div>

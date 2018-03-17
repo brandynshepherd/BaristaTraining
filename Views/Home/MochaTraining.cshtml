@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "MochaTraining";
+}
+@Styles.Render("~/Content/TrainingStyle")
+<section class="intro">
+    <div class="container">
+        <img src="~/Content/Images/Mocha.png" class="img-small" alt="No Image Found" />
+    </div>
+    <div class="thumb">
+        <h1>Mocha</h1>
+    </div>
+</section>
+
+<section class="timeline">
+    <ul>
+        <li>
+            <div class="commentBox">
+                <time>Welcome!</time> In the next few steps you will learn how to make a standard Mocha. The caramel macchiato is the most common espresso drink made and can take on as many flavors as you can imagine. Good luck!
+            </div>
+        </li>
+        <li>
+            <div class="flavor commentBox">
+                <time>Step 1: Flavor</time> The base for any Mocha is flavoring! In a standard medium Mocha about 120 mL of syrup flavoring is added to the bottom of the cup.
+            </div>
+        </li>
+        <li>
+            <div class="espresso commentBox">
+                <time>Step 2: Espresso</time> The most important part is the espresso. Bad espresso means a bad Mocha. Two shots pulled between 17-22 seconds is required for a medium sized Mocha.
+            </div>
+        </li>
+        <li>
+            <div class="milk commentBox">
+                <time>Step 3: Milk</time> Almost as critical is the milk, since it makes up the majority of the drink. Steaming should start in the middle of the pitcher and stop when the temperature of the milk reaches 160 degrees.
+            </div>
+        </li>
+        <li>
+            <div class="whipcream commentBox">
+                <time>Step 4:</time> Presentation is everything right? Put some whip cream on there and call it done!
+            </div>
+        </li>
+        <li>
+            <div class="commentBox">
+                <time>Congrats!</time> You've done it! You've made your first Mocha! You are on the road to becoming a Barista!
+            </div>
+        </li>
+        <li>
+            <div class="learnmore commentBox">
+                <time>Learn More?</time>  If you would like to continue your training, then click the button below to learn how to make a Caramel Macchiato!
+                <br />
+                <br />
+                @Html.ActionLink("Keep Going!", "LatteTraining", "Home", new { @class = "btn btn-outline-secondary" })
+            </div>
+        </li>
+    </ul>
+</section>
+<section>
+    <div class="thumb">
+        @Html.ActionLink("Back to Home", "Index", "Home", new {@class = "btn btn-outline-danger"})
+    </div>
+</section>
+@Scripts.Render("~/bundles/TrainingScript")

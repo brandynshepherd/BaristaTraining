@@ -1,0 +1,89 @@
+﻿body {
+
+}
+.jumbotron{
+    position: relative;
+    z-index: -101;
+    background-color: lightgray;
+    opacity: .5;
+}
+
+#video-background { 
+    position: fixed;
+    top: -300px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    width:125%;
+    
+}
+@media screen and (max-width: 1200px) {
+    #video-background { 
+        position: fixed;
+        top: -100px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -100;
+        width:200%;
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header-center {
+        text-align: center;
+    }
+    #video-background { 
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: -450px;
+        overflow: hidden;
+        z-index: -100;
+        width:400%;
+
+    }
+    .img-small 
+    {
+        width: 55% !important;
+    }
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.thumb 
+{
+    text-align: center;
+}
+img 
+{
+    border-radius: 50%;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.img-small
+{
+    width: 20%;
+}
